@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Layout, Menu, Card, Form, Input, Button } from 'antd';
+const { SubMenu } = Menu;
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content, Footer, Sider } = Layout;
 
 interface FormValues {
   username: string;
@@ -19,15 +20,33 @@ function App() {
   };
 
   return (
-    <Layout>
-      <Header>
-        <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-          <Menu.Item key="1">Pagina 1</Menu.Item>
-          <Menu.Item key="2">Pagina 2</Menu.Item>
-          <Menu.Item key="3">Pagina 3</Menu.Item>
-        </Menu>
-      </Header>
+    
+    <Layout style={{ height: '100vh', width: '100vw' }}>
+      <Sider width={200} style={{ background: '#fff' }}>
+                    <Menu
+                        theme="dark"
+                        mode="inline"
+                        defaultSelectedKeys={['1']}
+                        defaultOpenKeys={['sub1']}
+                        style={{ height: '100%', borderRight: 0 }}
+                    >
+                        <SubMenu key="sub1" title="Meniu 1">
+                            <Menu.Item key="1">Submeniu 1.1</Menu.Item>
+                            <Menu.Item key="2">Submeniu 1.2</Menu.Item>
+                          
+                        </SubMenu>
+                        <SubMenu key="sub2" title="Meniu 2">
+                            <Menu.Item key="4">Submeniu 2.1</Menu.Item>
+                            <Menu.Item key="5">Submeniu 2.2</Menu.Item>
+                           
+                        </SubMenu>
+                        <SubMenu key="sub3" title="Meniu 3">
+                            <Menu.Item key="7">Submeniu 3.1</Menu.Item>
+                            <Menu.Item key="8">Submeniu 3.2</Menu.Item>
+                          
+                        </SubMenu>
+                    </Menu>
+                </Sider>
       <Content style={{ padding: '0 50px' }}>
         <div className="site-layout-content">
           <Form name="basic" onFinish={handleFormSubmit}>
@@ -62,7 +81,7 @@ function App() {
             </Form.Item>
           </Form>
 
-          <Card title="Datele introduse" bordered={false} style={{ width: 300 }}>
+          <Card title="Datele introduse" bordered={false} style={{ width: 500}}>
             {dataList.map((data, index) => (
               <div key={index}>
                 <p>Numele: {data.username}</p>
@@ -74,7 +93,7 @@ function App() {
 
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}></Footer>
+      <Footer style={{ textAlign: 'center' }}>America</Footer>
     </Layout>
   );
 }

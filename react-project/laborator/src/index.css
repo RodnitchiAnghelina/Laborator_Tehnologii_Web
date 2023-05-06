@@ -1,70 +1,70 @@
-.container {
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;  
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.cont{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #e8f5e9;
+  align-items: center;
+  background-image: url("https://wallpaperaccess.com/full/1719697.png");
+  
 }
 
-.title {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  color: #37474f;
-}
-
-.form {
+form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+height: 713px;
+width: 300px;
+
 }
 
-.input {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #f1f8e9;
-  color: #37474f;
+label {
+  margin-top: 20px;
+  background-color: #990000;
 }
 
-.button {
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+input {
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 4px;
   border: none;
-  background-color: #4caf50;
-  color: #ffffff;
+  background-color: #f5f5f5;
+}
+
+button {
+  margin-top: 25px;
+  background-color: #008080;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+button:hover {
+  background-color: #006666;
 }
 
-.object {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: #b2dfdb;
+p {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.object p {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  color: #37474f;
+button:last-of-type {
+  margin-left: 20px;
+  background-color: #b30000;
 }
 
-.object button {
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #9e9e9e;
-  color: #ffffff;
-  cursor: pointer;
+button:last-of-type:hover {
+  background-color: #990000;
 }
+

@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #005C97;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #005C97;
+  text-decoration: none;
+}
+
+.destinations {
+  background-color: #F9F9F9;
+}
+
+.destinations h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.destinations ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destinations li {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  width: 300px;
+}
+
+.destinations li:hover {
+  transform: scale(1.05);
+}
+
+.destination-detail {
+  text-align: center;
+}
+
+.destination-detail h1 {
+  margin-bottom: 0;
+}
+
+.destination-detail p {
+  margin-top: 0;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 25px;
+}
+
+.contact ul {
+  padding-left: 20px;
+}
+
+
+
